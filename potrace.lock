@@ -5,4 +5,4 @@ POTRACE_SHA256=be8248a17dedd6ccbaab2fcc45835bb0502d062e40fbded3bc56028ce5eb7acc
 POTRACE_VERSION=1.16
 # z.library's SDK (GFOpenZlib, libraries/openzlib/sdk) and fpuauto, from amicradle-guest at this commit
 GUEST_REPO=https://github.com/DalsinAI/amicradle-guest
-GUEST_COMMIT=4a784c84b878fe0e9abade7006e67e1ded9b165c
+GUEST_COMMIT=e60388799a0c41f9115c31dec70784d942c9dd33
