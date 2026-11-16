@@ -51,7 +51,7 @@ fi
 # --- compile and link -----------------------------------------------------------
 LATE=""
 if m68k-amigaos-gcc -fno-late-combine-instructions -S -o /dev/null -x c /dev/null 2>/dev/null; then LATE="-fno-late-combine-instructions"; fi
-CF="-noixemul -m68040 -O2 -fomit-frame-pointer -fno-delete-null-pointer-checks $LATE -DHAVE_CONFIG_H -I$HERE/amiga -I$HERE/amiga/zlib -I$ZSDK -I$SRC/src -I$SRC/src/include/getopt"
+CF="-std=gnu17 -noixemul -m68040 -O2 -fomit-frame-pointer -fno-delete-null-pointer-checks $LATE -DHAVE_CONFIG_H -I$HERE/amiga -I$HERE/amiga/zlib -I$ZSDK -I$SRC/src -I$SRC/src/include/getopt"
 LF="-noixemul -m68040 -specs=$HERE/scripts/m68k-soft-m68040.specs -specs=$FA/fpuauto.specs -L$FAL"
 O="$WORK/obj"; rm -rf "$O"; mkdir -p "$O"
 cc1() { m68k-amigaos-gcc $CF "$@"; }
